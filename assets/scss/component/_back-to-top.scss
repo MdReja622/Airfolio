@@ -1,0 +1,22 @@
+@use '../utils' as *;
+
+.scroll-top {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	position: fixed;
+	bottom: 105%;
+	right: 60px;
+	font-size: 16px;
+	border-radius: 20px;
+	z-index: 999;
+	color: #ffffff;
+	text-align: center;
+	cursor: pointer;
+	background: #1A2C79;
+	transition: 1.5s ease;
+	border: none;
+}
+.scroll-top.\.scroll-top-open {
+	bottom: 60px;
+}

@@ -1,0 +1,14 @@
+@use '../utils' as *;
+
+.rs-section {
+	&-sub-title {
+		color: #000;
+		font-size: 16px;
+		display: block;
+	}
+	&-title{
+		font-size: 16px;
+
+	}
+}
+

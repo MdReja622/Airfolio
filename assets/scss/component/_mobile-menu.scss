@@ -1,0 +1,127 @@
+@use '../utils' as *;
+
+
+.sidebar__area {
+	position: fixed;
+	left: -360px;
+	top: 0;
+	width: 320px;
+	height: 100%;
+	background: #ffffff none repeat scroll 0 0;
+	overflow-y: scroll;
+	-webkit-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+	box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+	-webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	z-index: 9999;
+}
+
+.body-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+
+.sidebar__wrapper {
+	padding: 30px;
+}
+
+
+.sidebar-opened {
+	left: 0;
+}
+
+.opened {
+	opacity: 1;
+	visibility: visible;
+}
+.sidebar__close-btn {
+	width: 40px;
+	height: 40px;
+	border: 2px solid #3dadff;
+	border-radius: 100%;
+	transition: 0.3s;
+	&:hover {
+		background: #3dadff;
+		color: #fff;
+	}
+}
+
+
+.mean-container a.meanmenu-reveal {
+	display: none;
+}
+.mean-container .mean-nav {
+	background: none;
+	margin-top: 0;
+}
+.mean-container .mean-bar {
+	padding: 0;
+	min-height: auto;
+	background: none;
+}
+.mean-container .mean-nav > ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style-type: none;
+	display: block !important;
+}
+.mean-container a.meanmenu-reveal {
+	display: none !important;
+}
+.mean-container .mean-nav ul li a {
+	width: 100%;
+	padding: 14px 0;
+	color: #000;
+	border-top: 1px solid #e9ebed;
+	font-size: 15px;
+    font-weight: 400;
+	font-family: var(--rs-title-font);
+	line-height: 1;
+	position: relative;
+	& i {		
+		display: none;
+	}
+}
+.mean-container .mean-nav ul li a:hover {
+	color: #000;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+	margin-top: 0px;
+	line-height: 14px;
+	border-bottom: none;
+	padding: 0;
+	display: inline-block;	
+	line-height: 1;
+	padding-right: 0 !important;
+	transition: 0.3s;	
+	transform: rotate(0) !important;	
+
+	&:hover {
+		color: #000;
+		background: none;
+	}
+}
+.mean-container .mean-nav > ul > li:first-child > a{
+	border-top: 0;
+}
+.mean-container .mean-nav ul li a.mean-expand.mean-clicked i{
+	transform: rotate(-360deg) !important;	   
+	transition: 0.3s;		
+
+}

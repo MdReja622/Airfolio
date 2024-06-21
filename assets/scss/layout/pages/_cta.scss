@@ -1,0 +1,57 @@
+@use '../../utils' as *;
+
+
+.rs-cta {
+    &-btn {
+        .rs-btn{
+                background: #fff;
+                color: #000;
+                border-color: #fff;
+                &-border {
+                background:transparent;
+                color: #fff;    
+            }
+            &:hover{	
+                background: #078D84;
+                color: #fff;
+                border-color: transparent;  
+            }
+    
+        }
+    }
+    &-shape {
+        &-1 {
+            left: 70px;
+            top: 105px;
+            @media #{$xs} {
+                left: 30px;
+                top: 35px;
+            }
+        }
+        &-2 {
+            bottom: 55px;
+            left: 14%;
+            @media #{$xs} {
+                bottom: 20px;
+                left: 5%;
+            }
+        }
+        &-3 {
+            top: 65px;
+            right: 125px;
+            @media #{$xs} {
+                top: 15px;
+                right: 35px;
+            }
+        }
+        &-4 {
+            right: -30px;
+            bottom: -10px;
+            @media #{$xs} {
+                right: -115px;
+	            bottom: -35px;
+            }
+        }
+    }   
+    
+}

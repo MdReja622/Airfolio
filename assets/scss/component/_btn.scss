@@ -1,0 +1,32 @@
+@use '../utils' as *;
+
+.rs-btn {
+	text-transform: capitalize;
+	cursor: pointer;
+	display: inline-block;			
+	padding: 13px 25px;	
+	border-radius: 8px;	
+	transition: all 0.4s ease;
+	border: 1px solid transparent;
+	background: #078D84;
+	color: #fff;
+	&:hover{	
+		border: 1px solid #078D84;
+		background: transparent;
+	}
+	&-border{
+		border: 1px solid  #078D84;
+		background: transparent;
+		color: #000;
+		&:hover{	
+			background: #078D84;
+			color: #fff;
+
+		}
+	}
+		
+	
+}
+
+
+

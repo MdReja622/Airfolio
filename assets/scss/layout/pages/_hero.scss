@@ -1,0 +1,43 @@
+@use "../../utils" as *;
+
+.rs-hero {
+	&-sub-title {
+		color: #1C1C57;
+		font-size: 16px;
+		display: block;
+	}
+	&-title {
+		color: #1C1C57;
+		font-size: 56px;
+		font-weight: 500;
+		@media #{$lg} {
+			font-size: 48px;
+		}
+		@media #{$xs} {
+			font-size: 36px;
+		}
+		br{
+			@media #{$xs} {
+				display: none;
+			}
+		}
+	}
+	&-img {
+		img {
+			position: relative;
+			z-index: 2;
+		}
+		
+		&-shape {
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+		}
+	}
+	&-content {
+		@media #{$xs} {
+			padding-top: 0;
+		}	
+	}
+}
+

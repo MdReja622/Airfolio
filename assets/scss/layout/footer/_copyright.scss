@@ -1,0 +1,31 @@
+@use '../../utils' as *;
+
+.rs-copyright{
+    &-text{
+        p{
+            color: #FFFFFF; 
+            font-size: 14px;
+
+
+           
+        }
+    }
+    &-link{
+        li{
+            display: inline-block;
+            margin-left: 30px;            
+            position: relative;
+            border-bottom: 1px solid #fff;
+            a {             
+                color: #FFFFFF;
+                font-size: 14px;
+                text-transform: uppercase;               
+            }
+        }
+        li:first-child{
+            margin-left: 0; 
+
+        }
+       
+    }
+}

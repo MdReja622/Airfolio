@@ -1,0 +1,39 @@
+@use '../../utils' as *;
+
+
+
+.rs-brand {
+	&-title {
+		color: #FFF;
+		font-size: 18px;
+		margin: 0;
+		br {
+			@media #{$md}{
+				display: none;
+			}
+		}
+	}
+	&-single {
+		img {
+			max-height: 100%;
+			max-width: 100%;
+			object-fit: cover;
+			
+		}
+	}
+	&-slider {
+		.swiper-wrapper {		
+			align-items: center;
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+

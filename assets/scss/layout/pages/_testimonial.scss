@@ -1,0 +1,72 @@
+@use '../../utils' as *;
+
+
+
+.rs-testimonial {
+	&-ratiing {
+		i {
+			color: #fff;
+		}
+	}
+	&-text {
+		color: #FFF;
+		font-size: 20px;
+		font-weight: 500;
+		letter-spacing: -0.16px;
+		br {
+			@media #{$md ,$xs}{
+				display: none;
+			}
+		}
+	}
+	&-author {
+		&-name {
+			color: #FFF;
+			font-size: 16px;
+			font-weight: 600;
+		}
+		&-designation {
+			color: #FFF;
+			font-size: 16px;
+			font-weight: 400;
+		}
+		cite {
+			width: 1px;
+			height: 61px;
+			background: #000;
+			margin-right: 20px;
+		}
+		
+	}	
+	&-arrow {
+		button {
+			color: #1C1C57;
+			width: 48px;
+			height: 48px;
+			background: #FFFFFF;
+			border-radius: 100%;
+			line-height: 48px;
+			position: absolute;
+			z-index: 5;
+		}
+		&-right{
+			right: 60px;
+			top: 50%;
+			@media #{$md}{
+				right: 10px;
+			}
+		}
+		&-left {
+			left: 60px;
+			top: 50%;
+			@media #{$md}{
+				left: 10px;
+			}
+		}
+	}
+}
+
+
+
+
+
